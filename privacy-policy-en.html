@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TidPlayer Privacy Policy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            color: #222;
+            background: #fff;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+        .date {
+            text-align: center;
+            color: #555;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 30px 0 8px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #eee;
+        }
+        p {
+            margin: 8px 0;
+        }
+        ul, ol {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+        li {
+            margin: 6px 0;
+        }
+        .warn {
+            background: rgba(255, 149, 0, 0.08);
+            border-left: 3px solid #FF9500;
+            padding: 10px 14px;
+            margin: 14px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .tip {
+            background: rgba(0, 122, 255, 0.08);
+            border-left: 3px solid #007AFF;
+            padding: 10px 14px;
+            margin: 14px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<h1>TidPlayer Privacy Policy</h1>
+<p class="date">Effective date: October 7, 2026</p>
+
+<h2>Introduction</h2>
+<p>TidPlayer is a fully local, all-in-one media player for music, videos and EPUB e-books (local import, offline playback/reading, progress memory, favorites management). <strong>All media files, playback records, reading progress and personal settings are stored exclusively in the app's private storage on your device</strong>. No user data or media content is ever uploaded over the network. This policy explains in full how the app handles data, what system capabilities it uses, its in-app purchase rules, and how data is managed.</p>
+
+<h2>1. Information Collection and Storage</h2>
+<p>This app <strong>does not collect, upload or share with any third party any personal information, media file content, or playback/reading records</strong>.</p>
+<p>All data generated while using the app is persisted locally in the app's private storage on your iPhone, including: the media library directory structure, a local index of imported files (title, duration, cover thumbnail, category), music/video playback progress and resume positions, playlists, favorites, e-book reading progress and bookmarks, appearance and playback settings, and audio loudness analysis data.</p>
+<p>You can destroy all local data at any time via "Settings - Reset App" (imported media files, library records, playback progress, bookmarks and settings are permanently deleted and cannot be recovered; the paid unlock is exempt, see Section 6). Uninstalling the app automatically removes all of its local storage, leaving no residual data.</p>
+
+<h2>2. System Capabilities and Their Purpose</h2>
+<p>The following system capabilities are used solely to provide local media playback. They are never used for information collection, location tracking, advertising or any unrelated purpose:</p>
+<ul>
+    <li><strong>Local file access (system document picker)</strong>: you manually pick music, video and e-book files through the iOS system document picker, which are then copied into the app's private directory. The app never scans or reads any files unrelated to playback on its own initiative.</li>
+    <li><strong>Notification permission</strong>: shows the system media control notification (play/pause/previous/next) while music is playing. It is never used for marketing push notifications.</li>
+    <li><strong>Background audio mode</strong>: keeps music playing when the screen is locked or the app is in the background, and responds to system controls on the lock screen and from wired/Bluetooth headsets.</li>
+</ul>
+<div class="tip">
+    <strong>Sensitive permissions:</strong> this app does not request any sensitive permissions unrelated to playback — no camera, microphone, contacts, photo-library write access, or precise location — and it relies on no tracking identifiers.
+</div>
+
+<h2>3. Media Import and Local Sandbox Storage</h2>
+<p>When importing media, files are picked manually by you through the system document picker and copied into the app's private sandbox directory (inaccessible to other apps). The entire import process runs on the device: content parsing, cover extraction, chapter parsing and video thumbnail generation are all performed locally, with no server interaction of any kind.</p>
+<p>The "Share" feature hands the files you select to other apps of your choice through the <strong>system share sheet</strong>. The entire process is handled by the operating system; the app itself never contacts any third-party server.</p>
+
+<h2>4. Background Playback and System Media Controls</h2>
+<p>Background music playback, lock-screen controls, headset controls and Bluetooth device controls are implemented with Apple's official media session and background-audio capabilities. They interact only with on-device system components, with no cloud relay. The app has no cloud account system of any kind.</p>
+
+<h2>5. Free Version Limits</h2>
+<p>The free version has local library caps: 100 music tracks, 50 videos and 50 books. Once a cap is reached, only further imports are blocked; playback, reading and all other features for already-imported content remain fully functional. Cap counters are stored locally only and are never synced to any server.</p>
+
+<h2>6. One-Time Pro Unlock (In-App Purchase)</h2>
+<p>The app offers a one-time, non-consumable Pro unlock that removes all quantity limits. <strong>This is the only scenario in which the app ever needs a network connection</strong>:</p>
+<ul>
+    <li>Payment, ordering and purchase verification are handled entirely by the official Apple App Store;</li>
+    <li>The app does not obtain, store or upload your Apple ID, order details, bank card or any other payment-related private information;</li>
+    <li>The purchase receipt is delivered by the App Store and verified/stored on-device; "Reset App" does <strong>not</strong> revoke the Pro entitlement, and you can restore it via the in-app "Restore Purchase" after reinstalling or on a new device;</li>
+    <li>Apart from connecting to Apple servers, the app makes no other network requests.</li>
+</ul>
+
+<h2>7. Third-Party Components and Network Behavior</h2>
+<p>This app is a fully offline media tool. It integrates no advertising SDKs, behavior-analytics, tracking, cloud-sync or push-statistics components:</p>
+<ul>
+    <li>Audio/video decoding (media_kit / libmpv) and media metadata parsing (ffmpeg-kit) are open-source, on-device decoding libraries with no data-exfiltration logic of any kind;</li>
+    <li>The EPUB reading engine (cosmos_epub) performs typesetting, pagination and progress recording entirely on-device;</li>
+    <li>Only the in-app purchase flows (query, buy, restore) communicate with Apple servers. There is no other network activity;</li>
+    <li>The app never collects, shares or sells any user data to third parties.</li>
+</ul>
+<div class="warn">
+    <strong>Important notice:</strong> the app contains no in-app self-updater, no installer downloads and no external installation logic, and it will never induce you to download third-party content under any pretense.
+</div>
+
+<h2>8. Children's Privacy</h2>
+<p>This app is a general-purpose media player. It is not directed at children under 13 and does not knowingly collect any personal information from minors. If a guardian discovers that a child is using the app without authorization, please contact us and we will help address any concerns.</p>
+
+<h2>9. Data Retention and Deletion</h2>
+<p>All local data (library records, playback progress, bookmarks, favorites, settings and copies of imported media files) remains on the device in the app's private directory until you take one of the following actions:</p>
+<ol>
+    <li>Use "Settings - Reset App" to destroy all local data (including imported media files; this action cannot be undone);</li>
+    <li>Delete individual media files, directories or bookmarks inside the app;</li>
+    <li>Uninstall the app, after which the system automatically removes all app-private data with no residual files.</li>
+</ol>
+<p>The Pro purchase receipt is not stored by this app (it is held by your Apple ID account system) and is therefore unaffected by the deletion actions above.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>We may revise this privacy policy as the product evolves or as required by law. Updates will be published on this page; if a change involves a material alteration to how data is handled, the app will prominently prompt you to review the new version.</p>
+
+<h2>Contact Us</h2>
+<p>If you have any questions about this privacy policy, please contact us:</p>
+<p style="text-align: center; font-size: 1.1em; margin: 20px 0;">
+    📧 <a href="mailto:Secure-Space@outlook.com" style="color: #6366f1;">Secure-Space@outlook.com</a>
+</p>
+</body>
+</html>
